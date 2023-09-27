@@ -1,6 +1,59 @@
-# Getting Started with Create React App
+# Instructions
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a shell for a simple Calculator app, bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+Your task is to fill out the functionality based on the following requirements:
+
+## Initial state
+
+1. When the app is launched (or the page refreshed), the calculator's state should be cleared.
+2. If the current state of the calculator is empty, any button click other than a digit is ignored.
+
+## Display
+
+1. The display should show the current state of the calculator, listing each item in the state in order from first (on the left) to most recent (on the right).
+2. If the state is empty, show a "0".
+
+## AC button
+
+1. Clicking the AC button should clear the calculator state and reset the display to "0".
+
+
+## Digit buttons
+
+When a digit button is clicked:
+1. If the calculator state is empty, add a new number item to the state.
+2. If the most recent item in the state is a number, add the digit clicked onto the number (e.g. clicking "8" and then "9" should result in the number "89").
+3. If the most recent item in the state is an operator, create a new number item in the state.
+
+## Decimal (".") button
+
+When the decimal button is clicked:
+1. If the last value already has a decimal, ignore the click.
+2. If the last item is an operator, create a new number with a leading 0 in the state.
+
+## +/- button
+When the +/- button is clicked:
+1. If the most recent state item is a number, negate that number (add or remove - as necessary).
+2. Clicking this button when the most recent state item is anything else should be ignored.
+
+
+## Operator buttons
+The %, +, -, X, and ÷ buttons are all considered operators. When an operator is clicked:
+
+1. If the most recent state item is a number, add a new operator item to the state.
+2. If the most recent state item is another operator, replace the most recent item with the operator that was clicked.
+
+
+## = button
+
+When the = button is clicked, calculate the result of the arithmetical expression defined by the state.
+
+1. All operators are executed in order, regardless of the operation being performed.
+2. The "%" operator is shorthand for dividing by 100.
+3. The result of the calculation is stored as a number item in the state.
+
+
 
 ## Available Scripts
 
