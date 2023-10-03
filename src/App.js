@@ -11,7 +11,6 @@ const buttons = [
   "0", ".", "="];
 
 function App() {
-  
   // You can use this to maintain the calculator buffer
   const [calcBuffer, setCalcBuffer] = useState([]);
 
